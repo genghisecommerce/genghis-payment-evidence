@@ -1,30 +1,34 @@
 # Genghis payment evidence
 
-Every crypto payment Genghis has settled through its payment processor, from the first sale on 3 October 2025 to 20 September 2026. Published as traction evidence for the Genghis Stellar Community Fund application.
+Every crypto payment Genghis has settled through its payment processor, from the first sale on 3 October 2025 to 11 November 2026. Published as traction evidence for the Genghis Stellar Community Fund application.
 
 ## Headline
 
 | | |
 |---|---|
-| Settled payments | 1,395 |
-| Settled value | $106,879 |
-| Period | October 2025 to 20 September 2026 |
-| Crypto assets customers paid with | 37 |
+| Settled payments | 2,361 |
+| Settled value | $258,796 |
+| Period | 3 October 2025 to 11 November 2026 |
+| Crypto assets customers paid with | 47 |
+
+Our application cites 1,395 payments worth $106,879. That is this dataset as first published, which ended on 20 September 2026 at 14:28. This update adds the payments settled since then and changes no earlier row.
 
 Monthly totals are in [data/monthly_summary.csv](data/monthly_summary.csv). Every payment behind them is in [data/payments.csv](data/payments.csv).
 
 ## Where the data comes from
 
-Genghis takes payment through a licensed crypto payment processor. The data is the processor's own payment export, filtered to payments with the status "finished". It covers every customer, retail and business, so the monthly figures are total payment volume, not retail revenue alone.
+Genghis takes payment through a licensed crypto payment processor. The data is the processor's own payment export, and from 23 October 2026 its payment API, filtered to payments with the status "finished". It covers every customer, retail and business, so the monthly figures are total payment volume, not retail revenue alone.
 
 ## How the USD value is set
 
 - Settled in a stablecoin (USDT or USDC on any network): the settled amount.
 - Settled in another asset: the invoice value in USD.
 
-13 payments settled at a small fraction of their invoice (for example, a $57.93 invoice that settled $0.10). They stay in `payments.csv` with a flag and are left out of every total.
+24 payments settled at a small fraction of their invoice (for example, a $57.93 invoice that settled $0.10). They stay in `payments.csv` with a flag and are left out of every total.
 
-Also left out: 23 partially paid payments and 3 payments invoiced in Japanese yen and settled in a volatile asset, which have no reliable USD value.
+Also left out: 32 partially paid payments and 3 payments invoiced in Japanese yen and settled in a volatile asset, which have no reliable USD value.
+
+One known gap: our exports do not cover 17 October 2026 after 10:35, so the payments settled in the rest of that day are missing.
 
 ## What we removed, and why
 
