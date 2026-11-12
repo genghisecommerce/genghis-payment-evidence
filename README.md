@@ -6,8 +6,8 @@ Every crypto payment Genghis has settled through its payment processor, from the
 
 | | |
 |---|---|
-| Settled payments | 2,361 |
-| Settled value | $258,796 |
+| Settled payments | 2,371 |
+| Settled value | $262,715 |
 | Period | 3 October 2025 to 11 November 2026 |
 | Crypto assets customers paid with | 47 |
 
@@ -27,8 +27,6 @@ Genghis takes payment through a licensed crypto payment processor. The data is t
 24 payments settled at a small fraction of their invoice (for example, a $57.93 invoice that settled $0.10). They stay in `payments.csv` with a flag and are left out of every total.
 
 Also left out: 32 partially paid payments and 3 payments invoiced in Japanese yen and settled in a volatile asset, which have no reliable USD value.
-
-One known gap: our exports do not cover 17 October 2026 after 10:35, so the payments settled in the rest of that day are missing.
 
 ## What we removed, and why
 
